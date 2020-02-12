@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+.logo {
+
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+
+}
+
+
+.navimg {
+   width: 50vw;
+  height: 100%;
+  margin-left: -100px;
+  
+ 
+}
+
+.navimgdiv {
+
+   
+
+}
+
+.navtext{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em
+}
+
+.navlinks{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.omnav {
+
+  bottom: 0;
+}
+
+a{
+  display: block;
+  color: #F9F6EF;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after{
+  content: "";
+  background: #F9F6EF;
+  mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+  transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+a:hover {
+  text-decoration: none;
+   color: #F9F6EF;
+}
+a:hover::after{
+  height: calc(100% + 8px)
+}
+
+/* The End */
+
+.hiddenCircle {
+
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background:#183059; #0d0c0a;
+  -webkit-clip-path: circle(1px at 100% -10%);
+   clip-path: circle(30px at 110% -10%);
+  position: fixed;
+   flex-direction: column;
+ transition: all 1s;
+ -webkit-transition: all 1s;
+ transition-timing-function: ease-in-out;
+ -webkit-transition-timing-function: ease-in-out;
+   z-index: 2;
+  
+ 
+}
+
+.change2{
+     clip-path: circle(120vw at 100% -10%);
+
+    -webkit-clip-path: circle(120vw at 100% -10%);
+
+
+
+}
+
+.heroT {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFAFA;
+  font-size: 140px;
+  position: absolute;
+  margin-left: 2vw;
+}
+.heroT1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFAFA;
+  font-size: 130px;
+  position: absolute;
+  margin-left: 2vw;
+}
+.heroT2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFAFA;
+  font-size:120px;
+  position: absolute;
+  margin-left: 2vw;
+}
+.heroT3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFAFA;
+  font-size:100px;
+  position: absolute;
+  margin-left: 2vw;
+}
+
+
+
+
+#LeftHalf {
+
+	height: 100vh;
+  background: #183059;#0d0c0a; #f3f0e8;
+
+
+}
+
+
+body {
+	overflow-x : hidden;
+}
+
+#cool_svg {
+	
+
+
+}
+
+#chkpoint1 {
+         
+}
+.checkpoint {
+             height: 100vh;
+             width: 100%;
+     flex-direction: column;
+ transition: all .7s;
+ -webkit-transition: all .7s;
+ transition-timing-function: ease-in-out;
+ -webkit-transition-timing-function: ease-in-out;
+}
+
+#RightHalf {
+
+	
+}
+
+.rightbox{
+
+  background: #ff0038;
+    flex-direction: column;
+ transition: all .7s;
+ -webkit-transition: all .7s;
+ transition-timing-function: ease-in-out;
+ -webkit-transition-timing-function: ease-in-out;   /* fallback for old browsers #BA0C2E;*/
+}
+
+.rightbox.changecolor  {
+  
+   width: 100% !important;
+   background: red !important;
+   float: right !important;
+
+   
+}
+.leftbox {
+
+  height: 100vh;
+  background: #f3f0e8;
+
+
+}
+.pagebg {
+   
+  background: #ff0038;
+}
+.trishul {
+
+ height: 10vw;
+ width: 10vw;
+ margin-top: 15vw;
+ margin-right: 10vw;
+
+}
+.leftbox.changecolor  {
+  
+   width: 0% !important;
+   background: red !important;
+   float: left !important;
+
+   
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 8px;
+ 
+  
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #F9F6EF;
+  margin: 7px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: #F9F6EF;
+
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: #F9F6EF;
+}
+
+@keyframes change_background {
+   from {clip-path: circle(30px at 90% -10%);}
+ 
+   to {clip-path: circle(120vw at 90% -10%);}
+}
+
+@keyframes slideleft {
+      from{top: 0 ;}
+      to{top: -10;}
+
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 650px;
+  height: 480px;
+}
+.stuck {
+  position: absolute;
+  margin-left: -44vw;
+  margin-top: 10vh;
+}
+.trishul .show {
+   transition: all 1s;
+ -webkit-transition: all 1s;
+ transition-timing-function: ease-in-out;
+ -webkit-transition-timing-function: ease-in-out;
+ animation: slideleft 2s linear 2s forwards;
+
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #F6F4F3;
+}
+
+#timer {
+  color: #F6F4F3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: .7em;
+  letter-spacing: 5px;
+  margin-top: 25%;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: #EF2F3C;
+}
+
+.hours {
+  background: #F6F4F3;
+  color: #183059;
+}
+
+.minutes {
+  background: #276FBF;
+}
+
+.seconds {
+  background: #F0A202;
+}
+
+.numbers {
+  font-family: "Montserrat", sans-serif;
+  color: #183059;
+  font-size: 4em;
+}
+
+.white {
+  position: absolute;
+  background: #F6F4F3;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+.white .triangle {
+  border-bottom: 14px solid #F6F4F3;
+}
+.white .string {
+  background: #F6F4F3;
+  border: 1px solid #F6F4F3;
+}
+
+.red {
+  position: absolute;
+  background: #EF2F3C;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+}
+.red .triangle {
+  border-bottom: 14px solid #EF2F3C;
+}
+.red .string {
+  background: #EF2F3C;
+  border: 1px solid #EF2F3C;
+}
+
+.blue {
+  position: absolute;
+  background: #276FBF;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+}
+.yellow {
+  position: absolute;
+  background: #F0A202;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+}
+.yellow .triangle {
+  border-bottom: 14px solid #F0A202;
+}
+.yellow .string {
+  background: #F0A202;
+  border: 1px solid #F0A202;
+}
+
+.blue .triangle {
+  border-bottom: 14px solid #276FBF;
+}
+.blue .string {
+  background: #276FBF;
+  border: 1px solid #276FBF;
+}
+
+.balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: #000;
+  border-radius: 50%;
+}
+.eye:after {
+  content: '';
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #000 #000 transparent;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: #F6F4F3;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 51px;
+  margin-top: -5px;
+  background: #EF2F3C;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
